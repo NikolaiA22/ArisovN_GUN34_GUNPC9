@@ -116,7 +116,7 @@ namespace DefaultNamespace
 		{
             string jsonData = JsonUtility.ToJson(this, true); 
 
-            string filePath = Path.Combine(Application.persistentDataPath, "Path.json");
+            string filePath = Path.Combine(Application.dataPath, "Path.json");
 
             File.WriteAllText(filePath, jsonData);
 
